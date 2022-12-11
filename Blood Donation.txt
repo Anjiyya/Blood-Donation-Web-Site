@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width intial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITYA RAKTH.org</title>
+    <script src="https://kit.fontawesome.com/bd60cdc3e4.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Open+Sans:ital,wght@0,300;1,300;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image:url("https://t4.ftcdn.net/jpg/02/77/60/27/240_F_277602799_obZoXQiclfIFfMzvoKdl6x2F9GXsdrJH.jpg");
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+.nav-links{
+    flex: 1;
+    text-align:right;   
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+   
+}
+.nav-links ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-size-adjust: 20px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0;
+    height: 2px;
+    background:#f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+   
+}
+.nav-links ul li:hover::after{
+     width: 100%;  
+     color: #f44336;
+}
+
+.text-box{
+    width: 90%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+   position: absolute;
+   top: -10%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-size: 65px;
+   -webkit-text-stroke: 1px rgb(0, 0, 0);
+   color: transparent;
+   background-image: linear-gradient(rgb(255, 9, 9),rgb(119, 22, 22));
+   background-repeat: no-repeat;
+   -webkit-background-clip : text; 
+   background-position: -750px 0;
+   animation: backcolor 6s linear infinite alternate;
+   
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    font-weight: 500;
+    border: 1px ;
+    -webkit-text-stroke:1px rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    padding: 12px 34px ;
+    font-size: 15px;
+    background: transparent;
+    background-color:rgba(11, 196, 252, 0.7);
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #fff;
+    background: #f44336;
+    transition: 1s;
+    color: #fff;
+}
+.login-btn{
+    display:inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    padding: 12px 34px ;
+    font-size: 13px;
+    background: transparent;
+     background-color:rgba(11, 196, 252, 0.7);
+    position: relative;
+    cursor: pointer;
+    border-spacing: 20px;
+}
+.login-btn:hover{
+    border: 1px solid #fff;
+    background: #f44336;
+    transition: 1s;
+    color: rgb(255, 255, 255);
+}
+.search {
+
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+ 
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color:#777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-col{
+    flex-basis: 18%;                                   /* gap between boxes*/
+    background: #ffdddd;                             /* color*/
+    border-radius: 10px;                               /* cuting the edges  */
+    margin-bottom: 5%;                                  /*  space from bottom */
+    padding: 20px 12px ;                               /* 20 for top and bottom  and 12 px for left and right */
+    box-sizing:border-box;                            /* box seperating */
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0 ;
+}
+.search-col:hover{
+    box-shadow: 0 0 20px  0px rgba(0,0,0,0.2) ;    /* to get shadow effert after the cursor moves*/
+    cursor: pointer;                              /* hand symbol*/
+}
+.campus{
+    width: 98%;
+    height: 100%;
+    background-image: url(https://media.istockphoto.com/id/691225570/photo/dusk-summer-sunset-beach-hut-night.jpg?s=612x612&w=0&k=20&c=9svcasEVNfnH7ceZB1-heG-rWHlZAwagWaW8Ck0v-X8=);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;   /*so that the bg will stay*/
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+
+
+  
+
+}
+.campus p{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.29);
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition:0.5s;
+}
+.layer:hover{
+    background: rgba(226, 0, 0, 0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500%;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom:49%;
+    opacity:1;
+
+}
+.donts{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.donts-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.donts-col img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    padding:left;
+}
+.layer2{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition:0.5s;
+}
+.layer2:hover{
+    background:rgba(226, 0, 0, 0.7);
+}
+.layer2 h3{
+    width: 100%;
+    font-weight: 500%;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer2:hover h3{
+    bottom:49%;
+    opacity:1;
+}
+.dos{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.dos-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.dos-col img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    padding:left;
+}
+
+.video{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.reviews{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.reviews-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #94f9bd;
+    padding:25px;
+    cursor: pointer;
+    display: flex;
+}
+.reviews-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50px;
+
+}
+.reviews-col p{
+    padding: 0%;
+}
+.reviews-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(47, 149, 177, 0.7),rgba(0,0,0,0.7)), url(https://us.123rf.com/450wm/photobuay/photobuay1710/photobuay171000026/87956666-doctor-at-work-and-blood-donation.jpg?ver=6);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.click-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.click-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+.footer{
+    background-image: linear-gradient(#efefef,#f44336);
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer hr{
+    background: #f44336;
+}
+.footer p{
+    color: #fff;
+}
+</style>
+<body>
+    <section class="header">
+        <nav>                                             <!-- creating the navigation bar for that i used nav tag-->
+              <img src="C:\Users\Srikanth\Downloads\logo.1-removebg-preview.png" height="100" width="150">
+              <div class="nav-links">
+                <ul>
+                    <li><a href="file:///C:/Users/Srikanth/experiment_1.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+                
+                    <li><a href="file:///C:/Users/Srikanth/about_us.html"> <i class="fa-solid fa-user"></i> ABOUT US </a></li>
+                    <li><a href="file:///C:/Users/Srikanth/contacy_us.html"><i class="fa-solid fa-phone"></i> CONTACT US</a></li>                     
+                </ul>
+              </div>
+           
+        </nav>
+        
+ <div class="text-box">
+    <h1><q>BLOOD DONATION</q> </h1>  <!--main heading-->
+    <p ><q>Blood Donation Is A Small Act Of Kindness That Does Great And Big Wonders.</q>
+    </p>
+    <pre>
+    <a href="file:///C:/Users/Srikanth/login_for_1.html" class="login-btn"><b>DONAR LOGIN</b></a>
+
+ 
+    <a href="file:///C:/Users/Srikanth/visitus.html" class="hero-btn"> <b>visit us to know more</b></a><br />
+   
+</section>
+
+    <section class="search">
+        <h1>
+          For more Information
+        </h1>
+        <p>
+            check the below
+        </p>
+        <div class="row">
+            <div class="search-col">
+                <h3>Step 1</h3>
+                <p>Click on Register and fill the details .</p>
+            </div>
+            <div class="search-col">
+                <h3>Step 2</h3>
+                <p>Check the Do's and Don't before donating blood . .</p>
+            </div>
+
+            <div class="search-col">
+                <h3>Step 3   </h3>
+                <p>Search for Blood bank near to you and donate blood if you want to and save lives..</p>
+            </div>
+
+            <div class="search-col">
+                <h3>Step 4 </h3>
+                <p>Watch the video if you don't understand..</p>
+                
+            </div>
+
+
+            <div class="search-col">
+                <h3>Step 5</h3>
+                <p>Contact us for issues related to blood donating or any doubts regarding the process.</p>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <section class="campus">
+        <h1> Our Branches in India </h1>
+        <p>NITYA RAKTH is now all over in India </p>
+           <div class="row">
+            <div class="campus-col">
+             <img src="C:\Users\Srikanth\Downloads\blood 1.jpg" height="100%">
+            
+                <div class="layer2">
+                    <h3> KERALA</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="https://img.etimg.com/photo/msid-64587276,quality-100/blood-donation1_thinkstockphotos.jpg">
+               
+                   <div class="layer2">
+                       <h3> ANDHRA PRADESH</h3>
+   
+                   </div>
+               
+               </div>
+
+               <div class="campus-col">
+                <img src="https://media.istockphoto.com/photos/donor-donating-blood-picture-id1266747084?k=20&m=1266747084&s=612x612&w=0&h=m1eP-KWBnixmDkh1DdHFAjZn4ygyYZetFZVbZP34CRI=" height="100%"/>
+                   <div class="layer2">
+                       <h3>MUMBAI</h3>
+                     </div>
+               </div>
+                 </div>
+    </section>
+    
+
+    <section class="donts">
+        <h1> Do's & Don'ts </h1>
+        <p>the donar must follow </p>
+        <ul type="circle"><h1>DO's</h1></ul>
+           <div class="row">
+            <div class="donts-col">
+             <img src="data:image/jpeg;base64,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" height="100%">
+            
+                <div class="layer">
+                    <h3> Drink more Water</h3>
+
+                </div>
+            
+            </div>
+
+
+            <div class="donts-col">
+                <img src="https://image.shutterstock.com/image-vector/healthy-food-vector-help-healthcare-260nw-756736654.jpg" height="100%">
+               
+                   <div class="layer">
+                       <h3>Take Healthy Food</h3>
+   
+                   </div>
+               
+               </div>
+
+               <div class="donts-col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA3vXPE0YDL6jh6s7TxIFVVZPFfCyTjZB4Sg&usqp=CAU" height="100%"/>
+                   <div class="layer">
+                       <h3>Sleep Maximum Time</h3>
+                     </div>
+               </div>
+                 </div>
+    </section>
+
+    <section class="dos">
+        <h1> Don'ts </h1>
+        <p>the Donar do not follow these </p>
+        
+           <div class="row">
+            <div class="dos-col">
+             <img src="https://ih1.redbubble.net/image.3708128384.9549/poster,840x830,f8f8f8-pad,1000x1000,f8f8f8.jpg" height="100%">
+            
+                <div class="layer">
+                    <h3> AVOID ALCOHOL</h3>
+
+                </div>
+            
+            </div>
+
+
+            <div class="dos-col">
+                <img src="https://i.pinimg.com/originals/9a/cd/aa/9acdaa0c2f6ec4b092c8e365e0b666c2.jpg" height="100%" />
+               
+                   <div class="layer">
+                       <h3>AVOID<br/>
+                        JUNK FOOD</h3>
+   
+                   </div>
+               
+               </div>
+
+               <div class="dos-col">
+                <img src="data:image/jpeg;base64,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" height="100%"/>
+                   <div class="layer">
+                       <h3>AVOID HEAVY  <br />
+                        EXERCISE
+                            
+                    </h3>
+                     </div>
+               </div>
+                 </div>
+    </section>
+ <section class="video">
+    <h1> FOR MORE INFORMATION </h1>
+    <p>please play this video for more information on BLOOD DONATION </p>
+       <div video="row">
+        <div class="video-col">
+           
+           
+           
+            <video height=100%   widge=100% videoaline="center"controls>   
+                <source src="C:\Users\Srikanth\Downloads\TIPS_ Before Blood Donation.mp4" type="video/mp4">
+                </video>
+                <h3> TIPS FOR BLOOD DONARS</h3>
+        
+        </div>
+    </section>
+   
+    <section class="reviews">
+        <h1>OUR FIRST DONARS</h1>
+        <p>our first Donars shared there reviews</p>
+
+        <div class="row">
+            <div class="reviews-col">
+                <img src="https://media.istockphoto.com/photos/portrait-of-a-smiling-young-man-of-indian-origin-picture-id887340762?k=20&m=887340762&s=170667a&w=0&h=YTR35cK1gjespOWD8t_EU-BPg14SIkAOtSKVRmthOW0=">
+                <div>
+                    <p>I am so happy to donating blood in NITYA RAKTH groups I myself came forward to donate blood and I wish you to Donate your blood for Others</p>
+                    <h3>Prakesh Kammula</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+
+                </div>
+        </div>
+
+
+
+       
+
+        <div class="reviews-col">
+            <img src="https://img.freepik.com/free-photo/surprised-happy-girl-pointing-left-recommend-product-advertisement-make-okay-gesture_176420-20191.jpg?w=2000">
+            <div>
+                <p>I am so happy to donating blood in NITYA RAKTH groups I myself came forward to donate blood and I wish you to Donate your blood for Others</p>
+                <h3>Swapna </h3>
+                <i class="fa-solid fa-star"></i>
+
+                <i class="fa-solid fa-star"></i>
+
+                <i class="fa-solid fa-star"></i>
+
+                <i class="fa-solid fa-star"></i>
+
+                <i class="fa-solid fa-star-half-stroke"></i>
+
+            </div>
+    </div>
+        </div>
+
+        <section class="cta">
+        <h1> Enroll For Our Various Online Services<br> Anywhere From In INDIA </h1>
+        <a href="file:///C:/Users/Srikanth/contacy_us.html" class="click-btn">CONTACT US</a>
+            </section>
+
+         <section class="footer">
+            <h4> About Us</h4>
+            <p>We are people who are always near to the people and to surve them and we organised a camp  <br>later that we started NITHA RAKTH now and we mmake it in all over in India</p>
+            <hr>
+            <p class="copyright"> made by @ Group-1(Srikanth,Ajay,Farooq) </p>
+        </section>
+                
+        
+       
+        
+     
+
+    </section>
+</body>
+</html>
